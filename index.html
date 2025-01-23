@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Calcular Descuento</title>
+</head>
+<body>
+  <h1>Calculadora de Descuentos</h1>
+  <div class="input-container">
+    <input type="number" id="cantidad" placeholder="Ingresa la cantidad" required>
+    <input type="number" id="valor" placeholder="Ingresa el valor del producto" required>
+  </div>
+  <div>
+    <button onclick="calcularTotal()">Calcular Total</button>
+  </div>
+  <div id="resultado" class="output"></div>
+  <h2>Selecciona un descuento:</h2>
+  <div>
+    <button onclick="calcularDescuento(0.2)">20%</button>
+    <button onclick="calcularDescuento(0.3)">30%</button>
+    <button onclick="calcularDescuento(0.4)">40%</button>
+    <button onclick="calcularDescuento(0.5)">50%</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
